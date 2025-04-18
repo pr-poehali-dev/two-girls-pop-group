@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Instagram, Twitter, Youtube, Music, MessageCircle, Heart } from 'lucide-react';
+import { Instagram, Twitter, Youtube, Music, MessageCircle, Heart, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 
@@ -120,10 +120,11 @@ const Footer = () => {
                 info@twogirls.ru
               </a>
               <a 
-                href="tel:+79991234567" 
-                className="text-muted-foreground hover:text-foreground transition-colors"
+                href="tel:+79242461020" 
+                className="text-muted-foreground hover:text-foreground transition-colors flex items-center"
               >
-                +7 (999) 123-45-67
+                <Phone className="h-4 w-4 mr-2" />
+                +7 (924) 246-10-20
               </a>
               <a 
                 href="https://t.me/two_girls0" 
