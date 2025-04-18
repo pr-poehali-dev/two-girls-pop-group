@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Instagram, Twitter, Youtube, Music } from 'lucide-react';
+import { Instagram, Twitter, Youtube, Music, MessageCircle, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 
@@ -17,21 +17,71 @@ const Footer = () => {
               Создана в 2025 году в городе Находка.
             </p>
             <div className="flex space-x-2">
-              <Button variant="ghost" size="icon" className="rounded-full">
-                <Instagram className="h-5 w-5" />
-                <span className="sr-only">Instagram</span>
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="rounded-full"
+                asChild
+              >
+                <a href="https://t.me/two_girls0" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="h-5 w-5" />
+                  <span className="sr-only">Telegram</span>
+                </a>
               </Button>
-              <Button variant="ghost" size="icon" className="rounded-full">
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="rounded-full"
+                asChild
+              >
+                <a href="https://www.instagram.com/two_girls42" target="_blank" rel="noopener noreferrer">
+                  <Instagram className="h-5 w-5" />
+                  <span className="sr-only">Instagram</span>
+                </a>
               </Button>
-              <Button variant="ghost" size="icon" className="rounded-full">
-                <Youtube className="h-5 w-5" />
-                <span className="sr-only">YouTube</span>
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="rounded-full"
+                asChild
+              >
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <Twitter className="h-5 w-5" />
+                  <span className="sr-only">Twitter</span>
+                </a>
               </Button>
-              <Button variant="ghost" size="icon" className="rounded-full">
-                <Music className="h-5 w-5" />
-                <span className="sr-only">Музыкальные платформы</span>
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="rounded-full"
+                asChild
+              >
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <Youtube className="h-5 w-5" />
+                  <span className="sr-only">YouTube</span>
+                </a>
+              </Button>
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="rounded-full"
+                asChild
+              >
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <Music className="h-5 w-5" />
+                  <span className="sr-only">Музыкальные платформы</span>
+                </a>
+              </Button>
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="rounded-full"
+                asChild
+              >
+                <a href="https://www.instagram.com/two_girls42" target="_blank" rel="noopener noreferrer">
+                  <Heart className="h-5 w-5" />
+                  <span className="sr-only">Лайк</span>
+                </a>
               </Button>
             </div>
           </div>
@@ -47,6 +97,12 @@ const Footer = () => {
               </Link>
               <Link to="/music" className="text-muted-foreground hover:text-foreground transition-colors">
                 Музыка
+              </Link>
+              <Link to="/blog" className="text-muted-foreground hover:text-foreground transition-colors">
+                Студийный дневник
+              </Link>
+              <Link to="/concerts" className="text-muted-foreground hover:text-foreground transition-colors">
+                Концерты
               </Link>
               <Link to="/gallery" className="text-muted-foreground hover:text-foreground transition-colors">
                 Галерея
@@ -68,6 +124,14 @@ const Footer = () => {
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
                 +7 (999) 123-45-67
+              </a>
+              <a 
+                href="https://t.me/two_girls0" 
+                className="text-muted-foreground hover:text-foreground transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Telegram: @two_girls0
               </a>
             </nav>
           </div>

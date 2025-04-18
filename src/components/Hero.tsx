@@ -27,15 +27,20 @@ const Hero = () => {
                 <Music className="mr-2 h-5 w-5" />
                 Предзаказ
               </Button>
-              <Button variant="outline" size="lg">
-                <Calendar className="mr-2 h-5 w-5" />
-                Концерты
+              <Button variant="outline" size="lg" asChild>
+                <Link to="/concerts">
+                  <Calendar className="mr-2 h-5 w-5" />
+                  Концерты
+                </Link>
               </Button>
             </div>
             
             <div className="pt-4">
               <p className="text-sm text-muted-foreground">
                 Первый альбом <Link to="/music" className="font-medium underline text-foreground hover:text-twogirls-purple">«Неразлучные»</Link> выйдет летом 2025 года
+              </p>
+              <p className="text-sm mt-1">
+                Следите за работой над записью альбома в нашем <Link to="/blog" className="font-medium text-twogirls-purple hover:underline">студийном дневнике</Link>
               </p>
             </div>
           </div>
