@@ -34,7 +34,7 @@ const Footer = () => {
                 className="rounded-full"
                 asChild
               >
-                <a href="https://www.instagram.com/two_girls42" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/two.girls0921" target="_blank" rel="noopener noreferrer">
                   <Instagram className="h-5 w-5" />
                   <span className="sr-only">Instagram</span>
                 </a>
@@ -56,7 +56,7 @@ const Footer = () => {
                 className="rounded-full"
                 asChild
               >
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a href="https://youtube.com/@twogirls098" target="_blank" rel="noopener noreferrer">
                   <Youtube className="h-5 w-5" />
                   <span className="sr-only">YouTube</span>
                 </a>
@@ -78,7 +78,7 @@ const Footer = () => {
                 className="rounded-full"
                 asChild
               >
-                <a href="https://www.instagram.com/two_girls42" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/two.girls0921" target="_blank" rel="noopener noreferrer">
                   <Heart className="h-5 w-5" />
                   <span className="sr-only">Лайк</span>
                 </a>
@@ -114,10 +114,10 @@ const Footer = () => {
             <h3 className="font-medium">Контакты</h3>
             <nav className="flex flex-col space-y-2">
               <a 
-                href="mailto:info@twogirls.ru" 
+                href="mailto:twogirls12309@gmail.com" 
                 className="text-muted-foreground hover:text-foreground transition-colors"
               >
-                info@twogirls.ru
+                twogirls12309@gmail.com
               </a>
               <a 
                 href="tel:+79242461020" 

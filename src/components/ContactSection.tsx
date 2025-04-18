@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Phone, Mail, MessageCircle, Instagram } from "lucide-react";
+import { Phone, Mail, MessageCircle, Instagram, Youtube } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -13,7 +13,7 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
           <Card className="bg-gradient-to-br from-twogirls-red/5 to-twogirls-purple/5 border-none shadow-sm hover:shadow transition-shadow">
             <CardContent className="pt-6 flex flex-col items-center text-center space-y-4">
               <div className="h-12 w-12 rounded-full bg-twogirls-red/10 flex items-center justify-center">
@@ -38,7 +38,7 @@ const ContactSection = () => {
                 <h3 className="font-medium mb-1">Email</h3>
                 <p className="text-muted-foreground mb-4">Для деловых предложений</p>
                 <Button asChild variant="link" className="text-twogirls-purple">
-                  <a href="mailto:info@twogirls.ru">info@twogirls.ru</a>
+                  <a href="mailto:twogirls12309@gmail.com">twogirls12309@gmail.com</a>
                 </Button>
               </div>
             </CardContent>
@@ -64,7 +64,10 @@ const ContactSection = () => {
               </div>
             </CardContent>
           </Card>
+        </div>
 
+        <h3 className="text-xl font-medium text-center mb-6">Наши социальные сети</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Card className="bg-gradient-to-br from-twogirls-purple/5 to-twogirls-red/5 border-none shadow-sm hover:shadow transition-shadow">
             <CardContent className="pt-6 flex flex-col items-center text-center space-y-4">
               <div className="h-12 w-12 rounded-full bg-twogirls-purple/10 flex items-center justify-center">
@@ -75,11 +78,32 @@ const ContactSection = () => {
                 <p className="text-muted-foreground mb-4">Следите за новостями</p>
                 <Button asChild variant="link" className="text-twogirls-purple">
                   <a 
-                    href="https://www.instagram.com/two_girls42" 
+                    href="https://www.instagram.com/two.girls0921" 
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    @two_girls42
+                    @two.girls0921
+                  </a>
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-gradient-to-br from-twogirls-red/5 to-twogirls-purple/5 border-none shadow-sm hover:shadow transition-shadow">
+            <CardContent className="pt-6 flex flex-col items-center text-center space-y-4">
+              <div className="h-12 w-12 rounded-full bg-twogirls-red/10 flex items-center justify-center">
+                <Youtube className="h-6 w-6 text-twogirls-red" />
+              </div>
+              <div>
+                <h3 className="font-medium mb-1">YouTube</h3>
+                <p className="text-muted-foreground mb-4">Смотрите наши видео</p>
+                <Button asChild variant="link" className="text-twogirls-red">
+                  <a 
+                    href="https://youtube.com/@twogirls098" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    @twogirls098
                   </a>
                 </Button>
               </div>
